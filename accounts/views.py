@@ -98,25 +98,6 @@ class UserLogoutView(APIView):
 
 
 
-# class UserAccountUpdateView(APIView):
-#     serializer_class = UserAccountUpdateSerializer
-
-#     def put(self, request, pk, *args, **kwargs):
-#         user = UserAccount.objects.get(pk=pk)
-#         serializer = self.serializer_class(user, data=request.data)
-#         if serializer.is_valid():
-#             serializer.save()
-#             return Response(serializer.data)
-#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
-    
-    
-# class UserAccountDeleteView(APIView):
-#     def delete(self, request, pk, *args, **kwargs):
-#         user = UserAccount.objects.get(pk=pk)
-#         user.delete()
-#         return Response(status=status.HTTP_204_NO_CONTENT)
-
 
     
  
