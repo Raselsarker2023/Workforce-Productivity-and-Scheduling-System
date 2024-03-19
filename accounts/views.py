@@ -19,11 +19,11 @@ from rest_framework.filters import SearchFilter
 
 # Create your views here.
 
-class UserAccountViewset(viewsets.ModelViewSet):
-    queryset = models.UserAccount.objects.all()
-    serializer_class = serializers.UserAccountSerializer
-    filter_backends = [SearchFilter]
-    search_fields = ['user__first_name', 'user__last_name', 'email', 'phone_no']
+# class UserAccountViewset(viewsets.ModelViewSet):
+#     queryset = models.UserAccount.objects.all()
+#     serializer_class = serializers.UserAccountSerializer
+#     filter_backends = [SearchFilter]
+#     search_fields = ['user__first_name', 'user__last_name', 'email', 'phone_no']
 
        
 

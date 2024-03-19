@@ -2,10 +2,10 @@ from rest_framework import serializers
 from . import models
 from django.contrib.auth.models import User
 
-class UserAccountSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = models.UserAccount
-        fields = '__all__'
+# class UserAccountSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = models.UserAccount
+#         fields = '__all__'
         
                  
 class RegistrationSerializer(serializers.ModelSerializer):
