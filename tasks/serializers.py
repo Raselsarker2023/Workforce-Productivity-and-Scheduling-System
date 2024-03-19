@@ -7,26 +7,3 @@ class TaskModelSerializer(serializers.ModelSerializer):
         model = models.TaskModel
         fields = '__all__'
         
-class ManagerSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = models.Manager
-        fields = '__all__'
-        
-        
-        
-class RoleSerializer(serializers.ModelSerializer): 
-    class Meta:
-        model = models.Role
-        fields = '__all__'
-        
-        
-class EmployeeSerializer(serializers.ModelSerializer): 
-    class Meta:
-        model = models.Employee
-        fields = '__all__'
-        
-        
-class EmployeeAssignSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = models.EmployeeAssign
-        fields = '__all__'

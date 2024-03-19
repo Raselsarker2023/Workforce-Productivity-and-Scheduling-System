@@ -4,7 +4,4 @@ from . import models
 # Register your models here.
 
 admin.site.register(models.TaskModel)
-admin.site.register(models.Manager)
-admin.site.register(models.Role)
-admin.site.register(models.Employee)
-admin.site.register(models.EmployeeAssign)
+

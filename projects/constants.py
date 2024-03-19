@@ -1,11 +1,14 @@
 STATUS_CHOICES = [
     ('Draft', 'Draft'),
-    ('ONGOING', 'ONGOING'),
-    ('ABANDON', 'ABANDON'),
-    ('COMPLETED', 'COMPLETED'),
+    ('ONGOING', 'Ongoing'),
+    ('ABANDON', 'Abandon'),
+    ('COMPLETED', 'Completed'),
 ]
-PRIORITY_CHOICES = [
-    ('Low', 'Low'),
-    ('Medium', 'Medium'),
-    ('High', 'High'),
-]
+
+PRIORITY_CHOICES = (
+    ('1', '1'),
+    ('2', '2'),
+    ('3', '3'),
+    ('4', '4'),
+    ('5', '5'),
+)

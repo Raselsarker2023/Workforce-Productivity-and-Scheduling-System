@@ -1,12 +1,11 @@
+ 
 from django.db import models
 from django.contrib.auth.models import User
-from projects.models import ProjectModel
-from tasks.models import TaskModel 
+
 
 class TeamModel(models.Model):
-    members = models.ManyToManyField(User, related_name='teams')
-    projects = models.ManyToManyField(ProjectModel, related_name='teams')
-    tasks = models.ManyToManyField(TaskModel, related_name='teams')
+    members = models.ManyToManyField(User, related_name='team_members', blank=True)
+    team_admin = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
     name = models.CharField(max_length=255)
     description = models.TextField(blank=True, null=True)
     
