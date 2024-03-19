@@ -28,7 +28,6 @@ class ProjectModelAPIView(viewsets.ModelViewSet):
 
 
 # List API views
-
 class ShortScheduleProjectTaskList(APIView):
     def get(self, request, *args, **kwargs):
         try:
